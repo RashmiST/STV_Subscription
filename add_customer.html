@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STV-Subscription</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="scripts/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_customer.html">Add customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="edit_customer.html">Edit customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subscription.html">Subscription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_subscription5.html"
+              >Add subscription</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="edit_subscription.html"
+              >Edit subscription</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="package.html">Package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_package.html">Add package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="edit_package.html">Edit package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subscription_report1.html"
+              >Subscription_R1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subscription_report2.html"
+              >Subscription_R2</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- add Customers start-->
+    <div class="container mt-5" id="add_constomers">
+      <div class="add_constomers_heading mb-3 p-2">
+        <h5>Add customer</h5>
+      </div>
+      <div>
+        <form>
+          <div class="row m-2">
+            <div class="col">
+              <label for="name"><h5>Name*</h5></label>
+              <input
+                type="text"
+                class="form-control form-control-clor"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="number"><h5>Mobile No.*</h5></label>
+              <input
+                type="text"
+                class="form-control form-control-clor"
+                id="number"
+                name="number"
+                required
+              />
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col">
+              <label for="email"><h5>EmailId</h5></label>
+              <input type="text" class="form-control form-control-clor" name="email"/>
+            </div>
+            <div class="col">
+              <label for="date"><h5>Date Of Birth</h5></label>
+              <input type="number" class="form-control form-control-clor" name="date"/>
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col">
+              <label for="name"><h5>Gender</h5></label><br />
+              <input type="radio" name="gender" class="form-control-clor" />
+              <label for="text"><h6>Male</h6></label>
+              <input type="radio" name="gender" class="form-control-clor" />
+              <label for="text"><h6>Female</h6></label>
+              <input type="radio" name="gender" class="form-control-clor" />
+              <label for="text"><h6>Other</h6></label>
+            </div>
+            <div class="col">
+              <label for="addCustomer"><h5>Address 1*</h5></label>
+              <input
+                type="text"
+                class="form-control form-control-clor"
+                required
+              />
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col">
+              <label for="addCustomer"><h5>Address 2</h5></label>
+              <input type="text" class="form-control form-control-clor" />
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="addCustomer"><h5>City</h5></label>
+                <select class="form-control form-control-id">
+                  <option>Select City</option>
+                  <option>Amravati</option>
+                  <option>Nagpur</option>
+                  <option>Pune</option>
+                  <option>Mumbai</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col">
+              <div class="form-group">
+                <label for=""><h5>Contry</h5></label>
+                <select class="form-control form-control-id">
+                  <option>Select Contry</option>
+                  <option>India</option>
+                  <option>America</option>
+                  <option>China</option>
+                  <option>Pakistan</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="addCustomer"
+                  ><h5>Upload Photo</h5></label
+                >
+                <!-- <br> -->
+
+                <button
+                  class="btn-btn-uplod btn-sm dropdown-toggle"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Choose
+                </button>
+
+                <label for="addCustomer">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="form-control-clor"
+                  />
+                </label>
+                <i class="fa fa-upload" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row m-2 p-3">
+            <div class="col-12">
+              <button
+                type="text"
+                class="btn bg-dark text-white float-right ml-2"
+              >
+                cancel
+              </button>
+              <button type="text" class="btn bg-dark text-white float-right">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <button
+        class="btn bg-dark text-white float-right m-2"
+        input
+        type="button"
+        name="Next"
+      >
+        <a href="edit_customer.html">Next</a>
+      </button>
+      <button
+        class="btn bg-dark text-white float-right m-2"
+        input
+        type="button"
+        name="Previous"
+      >
+        <a href="index.html">Previous</a>
+      </button>
+    </div>
+    <!-- add Customers end -->
+  </body>
+</html>

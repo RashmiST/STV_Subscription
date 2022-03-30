@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  <!-- jQuery library -->
+  <script src="scripts/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+
+  <!-- Latest compiled JavaScript -->
+  <script src="scripts/bootstrap.min.js"></script>
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>         
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+             <a class="nav-link"  href="index.html">Customer</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="add_customer.html">Add_Customer</a>
+            </li>  
+            <li class="nav-item">
+             <a class="nav-link" href="edit_customer.html">Edit_customer</a>
+            </li> 
+            <li class="nav-item">
+             <a class="nav-link" href="subscription.html">Subscription</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="add_subscription5.html">Add_Subscription</a>
+            </li>         
+            <li class="nav-item">
+             <a class="nav-link" href="edit_subscription.html">Edit_Subscription</a>
+            </li> 
+            <li class="nav-item">
+             <a class="nav-link" href="package.html">Package</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="add_package.html">Add_package</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="edit_package.html">Edit_Package</a>
+            </li> 
+            <li class="nav-item">
+             <a class="nav-link" href="subscription_report1.html">Subscription_R1</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="subscription_report2.html">Subscription_R2</a>
+            </li>    
+          </ul>
+        </div>        
+      </nav> 
+     <!-- Subscription report 1 start -->
+     <div class="container mt-5">
+        <div class="panel-group">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <div class="costomers_reports mt-3">
+                        <div class="row">
+                            <div class="leftNav p-3 col-md-6"><h5>Subscription Reports</h5>
+                             <div class="md-form md-outline input-with-post-icon datepicker">
+                               <input placeholder="Select date" type="date" id="form-control-clor" class="form-control ml-4">
+                             </div>
+                           
+                           </div> 
+                            <div class="rightNav_reports col-md-4 m-3">
+                            <button class="btn bg-dark text-white ">Show</button>
+                            </div>
+                        </div>
+                        </div>   
+                    </tr>
+                    <tr>
+                        <th>Sr. no.</th>
+                        <th>Date</th>
+                        <th>Total Subscriptions</th>
+                        <th>Collection</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td >dd/mm/yyyy</td>
+                        <td>10</td>
+                        <td>5000.00 RS</td>
+                    </tr>
+                    <tr> 
+                        <td></td>
+                    </tr>
+                    <tr> 
+                       
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <button class="btn bg-dark text-white float-right m-2" input type="button" name="Next"><a href="subscription_report2.html">Next</a></button>
+        <button class="btn bg-dark text-white float-right m-2" input type="button" name="Previous"><a href="edit_package.html">Previous</a></button>
+     </div>
+          <!-- Subscription report 1 end -->
+</body>
+</html>

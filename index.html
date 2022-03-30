@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STV-Subscription</title>
+ 
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  
+
+  <!-- jQuery library -->
+  <script src="scripts/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+
+  <!-- Latest compiled JavaScript -->
+  <script src="scripts/bootstrap.min.js"></script>
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      
+       
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+           <li class="nav-item ">
+            <a class="nav-link"  href="index.html">Customer</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="add_customer.html">Add customer</a>
+           </li>  
+           <li class="nav-item">
+            <a class="nav-link" href="edit_customer.html">Edit customer</a>
+           </li> 
+           <li class="nav-item">
+            <a class="nav-link" href="subscription.html">Subscription</a>
+           </li> 
+           <li class="nav-item">
+             <a class="nav-link" href="add_subscription5.html">Add subscription</a>
+           </li>         
+           <li class="nav-item">
+            <a class="nav-link" href="edit_subscription.html">Edit subscription</a>
+           </li> 
+           <li class="nav-item">
+            <a class="nav-link" href="package.html">Package</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="add_package.html">Add package</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="edit_package.html">Edit package</a>
+           </li> 
+           <li class="nav-item">
+            <a class="nav-link" href="subscription_report1.html">Subscription_R1</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="subscription_report2.html">Subscription_R2</a>
+           </li>    
+         </ul>
+       </div>        
+     </nav>  
+
+        <!-- customers start -->
+       <div class="container mt-3" id="addbtn p-5">
+           <div class="row">
+        <div class="col-md-7 discription"><h5>Customers</h5></div>
+        <div class="col-md-4 addbtn"> 
+            <button class="btn bg-dark text-white float-right fas fa-plus">
+              Add
+            </button>
+        </div>
+        </div>
+        </div>
+        <div class="container">
+        <div class="panel-group">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <div class="costomers mt-3">
+                        <div class="row">
+                            <div class="leftNav p-3 ml-2 col-md-7"><h5>Customer</h5></div> 
+                            <div class="rightNav col-md-4 m-2">
+                            <input type="text" name="search" id="search">
+                            <button class="btn bg-dark text-white ">Search</button>
+                            </div>
+                        </div>
+                        </div>   
+                    </tr>
+                    <tr>
+                        <th>Sr. no.</th>
+                        <th>Customer Id</th>
+                        <th>Customer Name</th>
+                        <th>Mobile No.</th>
+                        <th>Email Id</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1001</td>
+                        <td>Jack</td>
+                        <td>9574815542 </td>
+                        <td>jack@gmail.com</td>
+                        <td>
+                          <button><i class="fa fa-pencil" aria-hidden="true"></i>
+                          </button>
+                          <button><i class="fas fa-times-circle" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td></td>
+                    </tr>
+                    <tr> 
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+            <button class="btn bg-dark text-white float-right ml-2" input type="button" name="Next"><a href="add_customer.html">Next</a></button>
+            <!-- <button class="btn bg-dark text-white float-right" input type="button" name="Previous">Previous</button> -->
+            </div>
+            </div>
+    </div>
+    <!-- customers end -->
+   
+       
+       
+        
+    
+</body>
+</html>

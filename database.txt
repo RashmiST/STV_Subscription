@@ -1,0 +1,57 @@
+create table customers(id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50),
+gender VARCHAR(50),
+email_id VARCHAR(50),
+mobile_no. INT(30),
+photo BLOB(50),
+address1 VARCHAR(50),
+address2 VARCHAR(50),
+city_id INT(11),
+country_id INT(11),
+active TINYINT UNSIGNED,
+PRIMARY KEY(id),
+FOREIGN KEY(city_id)REFERENCES city(cid),
+FOREIGN KEY(country_id)REFERENCES country(coid),
+);
+
+INSERT INTO customer(active)
+values(250);
+
+
+create table package(pid INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50),
+channels VARCHAR(50),
+pack_price DECIMAL(3,2),
+validity INT(30) NOT NULL,
+active TINYINT UNSIGNED,
+PRIMARY KEY(pid)
+);
+
+
+create table subscription(sid INT NOT NULL AUTO_INCREMENT,
+customer_id  INT(11),
+package_id  INT(11),
+start_date DATE,
+end_date DATE,
+active TINYINT UNSIGNED,
+PRIMARY KEY(sid),
+FOREIGN KEY(customer_id)REFERENCES customer(id),
+FOREIGN KEY(package_id)REFERENCES package(pid),
+);
+
+
+create table city(cid INT NOT NULL AUTO_INCREMENT,
+country_id INT(11),
+name  VARCHAR(50),
+active TINYINT UNSIGNED,
+PRIMARY KEY(cid),
+FOREIGN KEY(country_id)REFERENCES country(coid)
+);
+
+create table country(coid INT NOT NULL AUTO_INCREMENT,
+name  VARCHAR(50),
+active TINYINT UNSIGNED,
+PRIMARY KEY(coid)
+);
+
+

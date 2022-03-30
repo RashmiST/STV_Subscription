@@ -1,0 +1,75 @@
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.costomers{
+    border:2px solid black;
+}
+table, tr,th{
+    border:2px solid black;
+}
+#form-control-id{
+   border: 2px solid black;
+    font-weight: 700;
+}
+.form-control-clor{
+    border: 2px solid rgb(189, 182, 182);
+}
+
+.leftNav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.rightNav{
+    width: 88%;
+  padding: 0 23px;
+    text-align: right;
+}
+
+#search{
+    font-size: 16px;
+    border: 2px solid black;
+}
+.btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    box-shadow: 6px 4px black;
+}
+a{
+    
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px; 
+    text-decoration: none;
+   
+}
+.btn-btn-uplod{
+    background: none;
+    box-shadow: 6px 4px black;
+}
+
+/* Add constomers start */
+
+#add_constomers{
+    border: 2px solid black;
+    padding: 0%;
+}
+.add_constomers_heading{
+
+    border: 2px solid black;
+}
+/* Add constomers end */
+
+/* Subscription report start */
+.costomers_reports{
+    margin-left: 20%;
+}
+.rightNav_reports{
+    margin-right: 20%;
+}
+/* Subscription report start */
